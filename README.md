@@ -1,5 +1,6 @@
 使用说明：
 1、clone代码到windows随便一个目录
+
 2、安装pyinstall
    python2 -m pip install pyinstall
    注意一定要Pyton2
